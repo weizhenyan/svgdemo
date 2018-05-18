@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>标题动画</title>
+	<meta charset="utf-8">
+	<style type="text/css" >
+     @import url(Title.css);
+	</style>
+</head>
+<body>
+  <div class="content">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xml:space="preserve" class="circle-load-rect-svg" width="360" height="300" viewbox="0 0 600 400">
+          <polyline points="100 300,135 200,160 260,190 200,220 300" class="g-rect-path"/>
+          <polyline points="100 300,135 200,160 260,190 200,220 300" class="g-rect-fill"/>
+          <circle cx="260" cy="270" r="26" class="oone"></circle>
+          <circle cx="260" cy="270" r="26"  class="oone-next"></circle>
+          <circle cx="340" cy="270" r="26" class="otwo"></circle>
+          <circle cx="340" cy="270" r="26"  class="otwo-next"></circle>
+          <path id="pathd" fill="none" stroke="red" stroke-dashoffset="0px" stroke-width="5px" 
+             d="M 450 260  A 30 30 90 1 0 450 280 M 450 160 L 450 300" >
+          </path>  
+         <path id="pathy" fill="none" stroke-dashoffset="0px" stroke-width="5px" 
+             d="M 480 250 L 500 300 L 530 240 M 500 300 L 460 370" >
+             <!-- M 480 250 L 500 300 L 540 240 M 500 300 L 450 370 -->
+        </path> 
+</svg>
+  </div>
+</body>
+</html>

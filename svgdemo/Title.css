@@ -1,0 +1,117 @@
+.content {
+     width: 375px;
+     height: 667px;
+     background-color: #eee;
+}
+.g-rect-path {
+       fill: none;
+       stroke-width:5;
+       stroke:#d3dce6;
+       stroke-linejoin:round;
+       stroke-linecap:round;
+}
+ .g-rect-fill {
+       fill: none;
+       stroke-width:5;
+       stroke:#ff7700;
+       stroke-linejoin:round;
+       stroke-linecap:round;
+       stroke-dasharray: 0, 1370;
+       stroke-dashoffset: 0;
+       animation: lineMove 20s ease-out infinite;
+  }
+.oone {
+	     stroke:red;
+	     stroke-width:5;
+	     fill:none; 
+
+}
+.oone-next {
+	     stroke:yellow; 
+	     stroke-width:5;
+	     fill:none;
+	      /*设置虚线还是实现*/
+	     stroke-dasharray: 1000,1000;
+	     stroke-dashoffset:0;
+	     animation: ooneMove 20s ease-out infinite;
+}
+.otwo {
+	     stroke:red;
+	     stroke-width:5;
+	     fill:none; 
+
+}
+.otwo-next {
+	      stroke:#66E83F;
+	      stroke-width:5;
+	      fill:none;
+	      /*设置虚线还是实现*/
+	      stroke-dasharray: 1000,1000;
+	      stroke-dashoffset:0;
+	      animation: otwoMove 20s ease-out infinite;
+}
+ #pathd {
+        animation: offset 5s linear 1 both;
+        stroke-dasharray: 100px,50px;
+        stroke-dashoffset: 0px;
+	      stroke:#1DAEF4;
+
+}
+#pathy {
+        animation: offsety 6s linear 1 both;
+        stroke-dasharray: 1000px,1000px;
+        stroke-dashoffset: 0px;
+	      stroke:#8A0BDF;
+
+}
+ @keyframes offsety {
+      0%{
+           stroke-dashoffset: 100px;
+           stroke-dasharray: 5px,5px;
+           stroke:rgba(123,8,10,0.80);
+      }
+      80%{
+      	    stroke-dashoffset:80%;
+      	    stroke-dasharray:1000,1000;
+      }
+      100%{
+             stroke-dashoffset: 0;
+      }
+}
+ @keyframes offset {
+     0%{
+            stroke-dashoffset: 100px;
+      }
+      80%{
+      	    stroke-dashoffset:80%;
+      	    stroke-dasharray:1000,1000;
+      }
+      100%{
+            stroke-dashoffset: 0;
+            stroke-dasharray:1000,1000;
+      }
+}
+@keyframes lineMove {
+      0%{
+            stroke-dasharray: 0, 1350;
+      }
+     100%{
+            stroke-dasharray: 1350, 1350;
+      }
+}
+@keyframes ooneMove{
+	    0%{
+		        stroke-dasharray: 0,1350;
+	      }
+	     100%{
+		        stroke-dasharray: 1350,1350;
+	      }
+}
+@keyframes otwoMove{
+	    0%{
+		        stroke-dasharray: 0,1350;
+	      }
+	    100%{
+		        stroke-dasharray: 1350,1350;
+	     }
+}
